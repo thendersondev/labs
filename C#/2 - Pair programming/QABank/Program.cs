@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace QABank
 {
@@ -10,6 +6,14 @@ namespace QABank
     {
         static void Main(string[] args)
         {
+            var one = new BankAccount();
+            var two = new BankAccount();
+            
+            Console.WriteLine(one.number);
+            Console.WriteLine(two.number);
+            
+            Console.WriteLine(one.Deposit(100));
+            Console.WriteLine(one.Withdraw(1000));
         }
     }
 }
